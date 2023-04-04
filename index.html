@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Orbitron&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/9497de40c9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="card" style="width: 50rem">
+      <div class="border border-4">
+      <div class="card-body">
+        <div class="first-row">
+          <div class="container">
+            <div class="row first-row">
+  
+              <div class="col-5 first-form">
+                <form>   
+                <input
+                  type="text"
+                  class="form-control"
+                  id="search-form"
+                  placeholder="enter a city"
+                />       
+            </div>
+              <div class="col-3"> <button type="submit" class="btn btn-outline-secondary" id="search-button"> Search  <i class="fa-solid fa-magnifying-glass"></i>
+              </button> </div>
+               
+              </form>
+                <div class="col-4 current-place">
+                  <button type="button" class="btn btn-outline-secondary" id ="current-button"> Current location  <i class="fa-solid fa-map-pin"></i></button>
+                </div>
+  
+             </div>  
+            </div>
+        </div>
+       
+
+        <div class="container ">
+            <div class="row second-row">
+           
+                       <div class = "col-1 main-icon"><img src="icons/sunny.svg" width="50px" hight="50px">    
+                       </img></div>
+           
+                       <div class="col-2 ">
+                             <div id="main-temp">19</div></div>
+           
+                       <div class= "col-2">
+                             <div id="which-temp"><span class="celsius-degree"> <a href="#" id="celsius-link">°C </a> </span> | 
+                                                  <span class="fahrenheit-degree"><a href="#" id="fahrenheit-link"> °F</a></span>
+                           </div></div>
+                             
+                      
+           
+                       <div class="col-5 info-b">
+           
+                         <div class="this-city"> Warsaw  </div>
+                         
+                           <div class="sunday"><span id="today-weekday"> Sunday </span><span id="number-day"> 12</span>  <span id="month">March</span><div>
+                           <div class="time-now"><span id="today-hours">22</span> : <span id="today-minutes">00</span></div>
+                         <div class="description">Partly Cloudy</div>
+                         </div>
+           
+           
+                       </div>
+                     </div>
+                     <div class="container ">
+                        <div class="row hum-win">
+                            <div class="col-7 info-a">
+                                <span class="humidity">Humidity <span id="humidity">77</span><strong> %</strong> </span><span class="wind">Wind <span id="wind">8</span><strong>  km/h</strong></span>
+                              </div>
+                        </div>
+                    </div>
+        
+          <div class="card border-dark-subtle third-row" style="width: 45rem" >       
+              <div class="card-body weekday-forecast">
+                <div class="container days">
+                    <div class="row">
+                        <div class="col first-mini">
+                           <div class="weekdays">Mon</div><img src="icons/sunny.svg" width="40px" height="40px"></img><br/><div class="temp">10°</div></div>
+                        <div class="col ">
+                            <div class="weekdays">Tue</div><img src="icons/cloudy.svg" width="40px" height="40px"></img><br/><div class="temp">11°</div>
+                        </div>
+                        <div class="col ">
+                           <div class="weekdays">Wed</div><img src="icons/sunny.svg" width="40px" height="40px"></img><br/><div class="temp">12°</div>
+                        </div>
+                        <div class="col">
+                            <div class="weekdays">Thu</div><img src="icons/partly-cloudy.svg" width="40px" height="40px"></img><br/><div class="temp"> 8°</div>
+                        </div>
+                        <div class="col ">
+                           <div class="weekdays">Fri</div><img src="icons/partly-cloudy.svg" width="40px" height="40px"></img><br/><div class="temp"> 9°</div>
+                          </div></div>
+            
+                    </div>
+                    </div>   
+                </div>
+       
+      
+          </div>
+          </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
