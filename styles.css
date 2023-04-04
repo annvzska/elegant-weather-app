@@ -1,0 +1,147 @@
+html,
+body {
+  font-family: sans-serif;
+  background: #f2eee6;
+}
+.card {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 0;
+  background: #efefef;
+}
+.card-body {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-right: 0;
+}
+.card-mini {
+  background: #e6e8e3;
+}
+.form-control {
+  margin-right: 20px;
+  background: #fce7bd;
+}
+.first-form {
+  margin-left: 10px;
+}
+.first-row {
+  margin: 0 auto;
+}
+.current-place {
+  margin-left: -40px;
+}
+.second-row {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  font-family: "Orbitron", sans-serif;
+}
+.hum-win {
+  margin-top: -40px;
+  margin-bottom: 30px;
+  margin-left: 68px;
+  padding-bottom: 40px;
+  font-family: "Orbitron", sans-serif;
+}
+.main-icon {
+  margin-left: 10px;
+  margin-top: 30px;
+}
+#main-temp {
+  font-size: 58px;
+  font-weight: 300;
+  color: black;
+  margin-top: 15px;
+  padding-top: 0px;
+  margin-left: 0px;
+}
+#which-temp {
+  margin-top: 30px;
+  margin-left: 37px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.celsius-degree {
+  margin-left: -80px;
+}
+
+.this-city {
+  font-size: 37px;
+  font-weight: bold;
+  font-family: "Orbitron", sans-serif;
+  color: #d8bb7f;
+  letter-spacing: 2px;
+  line-height: 110%;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+.time-now {
+  color: gray;
+  font-weight: 600;
+}
+.description {
+  margin-left: 130px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #9c9e9d;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+}
+
+.info-a {
+  line-height: 110%;
+  margin-top: 30px;
+  margin-left: -60px;
+  margin-right: 10px;
+  font-size: 17px;
+  font-family: "Orbitron", sans-serif;
+}
+.info-b {
+  line-height: 145%;
+  margin-top: 0px;
+  margin-left: 55px;
+  padding-top: 20px;
+  font-size: 17px;
+}
+
+#number-day {
+  font-size: 17px;
+  font-family: "Orbitron", sans-serif;
+  margin-left: 10px;
+}
+#month {
+  font-size: 17px;
+  font-family: "Orbitron", sans-serif;
+  margin-left: 2px;
+}
+.bottom {
+  margin-bottom: -17px;
+  padding-bottom: 0;
+}
+.humidity {
+  font-size: 15px;
+  font-family: "Orbitron", sans-serif;
+}
+.wind {
+  font-size: 15px;
+  font-family: "Orbitron", sans-serif;
+  margin-left: 40px;
+}
+#humidity {
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: 3px;
+}
+#wind {
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: 3px;
+}
