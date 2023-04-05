@@ -3,32 +3,33 @@ body {
   font-family: sans-serif;
   background: #f2eee6;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  font-weight: 700;
+  color: black;
+  font-size: 20px;
+}
+p {
+  font-size: 14px;
+  font-family: "Orbitron", sans-serif;
+  margin-left: 30px;
+}
 .card {
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 10px;
-  padding-bottom: 0;
   background: #efefef;
 }
-.card-body {
-  margin-left: 0px;
-  margin-right: 0px;
-  padding-right: 0;
-}
-.card-mini {
-  background: #e6e8e3;
-}
-.form-control {
+
+#search-form {
   margin-right: 20px;
   background: #fce7bd;
 }
-.first-form {
-  margin-left: 10px;
-}
-.first-row {
-  margin: 0 auto;
-}
-.current-place {
+.current-button {
   margin-left: -40px;
 }
 .second-row {
@@ -36,44 +37,42 @@ body {
   padding-bottom: 10px;
   font-family: "Orbitron", sans-serif;
 }
-.hum-win {
+.details-row {
   margin-top: -40px;
   margin-bottom: 30px;
   margin-left: 68px;
   padding-bottom: 40px;
   font-family: "Orbitron", sans-serif;
 }
-.main-icon {
+.forecast-row {
+  background: #e6e8e3;
+}
+#main-icon {
   margin-left: 10px;
   margin-top: -23px;
 }
 #main-temp {
-  font-size: 58px;
+  font-size: 50px;
   font-weight: 300;
   color: black;
   margin-top: 15px;
   padding-top: 0px;
-  margin-left: 50px;
-}
-.flex {
-  display: flex;
-  align-self: auto;
+  margin-left: 20px;
 }
 #units {
   position: relative;
   top: -28px;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-a:hover {
-  font-weight: 700;
-  text-decoration: none;
+.info-city {
+  line-height: 145%;
+  margin-top: 0px;
+  padding-top: 20px;
+  font-size: 17px;
+  margin-left: 10px;
 }
 
-.this-city {
+#city {
   font-size: 37px;
   font-weight: bold;
   font-family: "Orbitron", sans-serif;
@@ -82,6 +81,16 @@ a:hover {
   line-height: 110%;
   padding-bottom: 10px;
   padding-right: 10px;
+}
+#number-day {
+  font-size: 17px;
+  font-family: "Orbitron", sans-serif;
+  margin-left: 10px;
+}
+#month {
+  font-size: 17px;
+  font-family: "Orbitron", sans-serif;
+  margin-left: 2px;
 }
 .time-now {
   color: gray;
@@ -96,35 +105,13 @@ a:hover {
   letter-spacing: 1px;
 }
 
-.info-a {
+.info-details {
   line-height: 110%;
   margin-top: 30px;
   margin-left: -60px;
   margin-right: 10px;
   font-size: 17px;
   font-family: "Orbitron", sans-serif;
-}
-.info-b {
-  line-height: 145%;
-  margin-top: 0px;
-  margin-left: 55px;
-  padding-top: 20px;
-  font-size: 17px;
-}
-
-#number-day {
-  font-size: 17px;
-  font-family: "Orbitron", sans-serif;
-  margin-left: 10px;
-}
-#month {
-  font-size: 17px;
-  font-family: "Orbitron", sans-serif;
-  margin-left: 2px;
-}
-.bottom {
-  margin-bottom: -17px;
-  padding-bottom: 0;
 }
 .humidity {
   font-size: 15px;
@@ -144,9 +131,4 @@ a:hover {
   font-weight: 600;
   font-size: 16px;
   margin-left: 3px;
-}
-p {
-  font-size: 14px;
-  font-family: "Orbitron", sans-serif;
-  margin-left: 30px;
 }
