@@ -55,9 +55,9 @@ body {
   padding-top: 0px;
   margin-left: 0px;
 }
-#which-temp {
-  margin-top: 30px;
-  margin-left: 37px;
+#units{
+  position: relative;
+  top: -40px;
 }
 
 a {
@@ -67,10 +67,6 @@ a {
 a:hover {
   font-weight: 700;
   text-decoration: none;
-}
-
-.celsius-degree {
-  margin-left: -80px;
 }
 
 .this-city {
@@ -104,7 +100,7 @@ a:hover {
   font-size: 17px;
   font-family: "Orbitron", sans-serif;
 }
-.info-b {
+.info{
   line-height: 145%;
   margin-top: 0px;
   margin-left: 55px;
