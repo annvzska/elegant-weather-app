@@ -63,8 +63,7 @@ function showTemp(response) {
   let currentCityElement = document.querySelector("#city");
   currentCityElement.innerHTML = `${currentCity}`;
   let iconElement = document.querySelector("#main-icon");
-  iconElement.setAttribute =
-    ("src",
+  iconElement.setAttribute("src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 
   celsiusTemperature = response.data.main.temp;
