@@ -45,7 +45,7 @@ body {
 }
 .main-icon {
   margin-left: 10px;
-  margin-top: 30px;
+  margin-top: -23px;
 }
 #main-temp {
   font-size: 58px;
@@ -53,11 +53,15 @@ body {
   color: black;
   margin-top: 15px;
   padding-top: 0px;
-  margin-left: 0px;
+  margin-left: 50px;
 }
-#units{
+.flex {
+  display: flex;
+  align-self: auto;
+}
+#units {
   position: relative;
-  top: -40px;
+  top: -28px;
 }
 
 a {
@@ -100,11 +104,11 @@ a:hover {
   font-size: 17px;
   font-family: "Orbitron", sans-serif;
 }
-.info{
+.info-b {
   line-height: 145%;
   margin-top: 0px;
   margin-left: 55px;
-  padding-top: 10px;
+  padding-top: 20px;
   font-size: 17px;
 }
 
@@ -141,10 +145,7 @@ a:hover {
   font-size: 16px;
   margin-left: 3px;
 }
-.third-row{
-  margin-top: -15px;
-}
-p{
+p {
   font-size: 14px;
   font-family: "Orbitron", sans-serif;
   margin-left: 30px;
