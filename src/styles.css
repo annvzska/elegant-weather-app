@@ -7,11 +7,12 @@ a {
   text-decoration: none;
   color: black;
 }
-
-a:active {
-  font-weight: 700;
+.active {
   color: black;
-  font-size: 20px;
+  cursor: default;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: larger;
 }
 p {
   font-size: 14px;

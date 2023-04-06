@@ -45,6 +45,26 @@ currentTime.innerHTML = `${timeHours}`;
 let currentMinutes = document.querySelector("#today-minutes");
 currentMinutes.innerHTML = `${timeMinutes}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#weather-forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Tue", "Wed", "Thru"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+     
+  <div class="col-2 >
+     <div id="forecast-weekdays">Tue</div>
+    <div><img src="icons/cloudy.svg" width="40px" height="40px"id="forecast-icon"/></div>
+       <div id="forecast-temp">20°</div>
+       </div>
+       `;
+    forecastHTML = forecastHTML + `</div>`;
+    forecastElement.innerHTML = forecastHTML;
+  });
+}
+
 function showTemp(response) {
   console.log(response.data);
   let temperature = Math.round(response.data.main.temp);
@@ -63,15 +83,24 @@ function showTemp(response) {
   let currentCityElement = document.querySelector("#city");
   currentCityElement.innerHTML = `${currentCity}`;
   let iconElement = document.querySelector("#main-icon");
-  iconElement.setAttribute("src",
-    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 
+  displayForecast();
   celsiusTemperature = response.data.main.temp;
+}
+
+function showCity(city) {
+  let apiKey = "2f8204846a8a048e67d989332add6ca7";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showTemp);
 }
 
 function searchCurrentTemp(event) {
   event.preventDefault();
-  let city = document.querySelector("#search-form").value;
+  let city = document.querySelector("#search-city").value;
   let cityElement = document.querySelector("#city");
   cityElement.innerHTML = `${city}`;
   let apiKey = "2f8204846a8a048e67d989332add6ca7";
@@ -120,3 +149,5 @@ let linkFahrenheit = document.querySelector("#fahrenheit-link");
 linkFahrenheit.addEventListener("click", fahrenheit);
 
 let celsiusTemperature = null;
+
+showCity("Warsaw");
