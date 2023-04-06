@@ -23,98 +23,66 @@
   </head>
 
   <body>
-    <div class="card" style="width: 50rem">
-      <div class="border border-4">
-      <div class="card-body">
-        <div class="first-row">
           <div class="container">
-            <div class="row first-row">
-  
-              <div class="col-5 first-form">
-                <form>   
-                <input
-                  type="text"
-                  class="form-control"
-                  id="search-form"
-                  placeholder="enter a city"
-                />       
-            </div>
-              <div class="col-3"> <button type="submit" class="btn btn-outline-secondary" id="search-button"> Search  <i class="fa-solid fa-magnifying-glass"></i>
-              </button> </div>
-               
-              </form>
-                <div class="col-4 current-button">
-                  <button type="button" class="btn btn-outline-secondary" id ="current-button"> Current location  <i class="fa-solid fa-map-pin"></i></button>
-                </div>
-  
-             </div>  
-            </div>
-        </div>
-       
+              <div class="weather-app-wrapper">
+                  <div class="weather-app">
 
-        <div class="container ">
-            <div class="row second-row">
-           
-                       <div class = "col-2 " id="main-icon"><img src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png " width="130px" height="130px">    
-                       </img></div>
-           
-                       <div class="col-4 ">
-                             <span id="main-temp">10</span> <span id="units"><span class="celsius-degree active"> <a href="#" id="celsius-link" >°C </a> </span> | 
-                             <span class="fahrenheit-degree"><a href="#" id="fahrenheit-link"> °F</a></span>
-  </span></div>
-           
-                       
-                            
-                             
-                      
-           
-                       <div class="col-5 info-city">
-           
-                         <div id="city"> Warsaw  </div>
-                         
-                           <div class="sunday"><span id="today-weekday"> Sunday </span><span id="number-day"> 12</span>  <span id="month">March</span><div>
-                           <div class="time-now"><span id="today-hours">22</span> : <span id="today-minutes">00</span></div>
-                         <div class="description">Partly Cloudy</div>
-                         </div>
-           
-           
-                       </div>
-                     </div>
-                     <div class="container ">
-                        <div class="row details-row">
-                            <div class="col-7 info-details">
-                                <span class="humidity">Humidity <span id="humidity">77</span><strong> %</strong> </span><span class="wind">Wind <span id="wind">8</span><strong>  km/h</strong></span>
+                      <form id="search-form">
+                          <div class="row">
+                            <div class="col-6">
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Choose your city"
+                                aria-label="Choose your city"
+                                id="search-city"
+                              />
+                            </div>
+                            <div class="col-2">
+                              <button type="submit" class="btn btn-outline-secondary"id="search-button">Search <i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                          </form>
+                            <div class="col-3">
+                              <div>
+                                  <button type="button" class="btn btn-outline-secondary" id ="current-button"> Current location  <i class="fa-solid fa-map-pin"></i></button>
                               </div>
-                        </div>
-                    </div>
+                            </div>
+                          </div>
+                       
         
-          <div class="card border-dark-subtle forecast-row" style="width: 45rem" >       
-              <div class="card-body ">
-                <div class="container days">
-                    <div class="row">
-                        <div class="col ">
-                           <div class="weekdays">Mon</div><img src="icons/sunny.svg" width="40px" height="40px"></img><br/><div class="temp">10°</div></div>
-                        <div class="col ">
-                            <div class="weekdays">Tue</div><img src="icons/cloudy.svg" width="40px" height="40px"></img><br/><div class="temp">11°</div>
-                        </div>
-                        <div class="col ">
-                           <div class="weekdays">Wed</div><img src="icons/sunny.svg" width="40px" height="40px"></img><br/><div class="temp">12°</div>
-                        </div>
-                        <div class="col">
-                            <div class="weekdays">Thu</div><img src="icons/partly-cloudy.svg" width="40px" height="40px"></img><br/><div class="temp"> 8°</div>
-                        </div>
-                        <div class="col ">
-                           <div class="weekdays" >Fri</div><img src="icons/partly-cloudy.svg" width="40px" height="40px"></img><br/><div class="temp"> 9°</div>
-                          </div></div>
-            
-                    </div>
-                    </div>   
-                </div>
-       
+  <div class="row second-row">      
+    <div class = "col-2 "><img src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png" id="main-icon" width="120px" height="120px">    
+        </img>
+      </div>       
+    <div class="col-4 ">
+      <span id="main-temp"></span> <span id="units"><span class="celsius-degree active"> <a href="#" id="celsius-link" class="active">°C </a> </span> | 
+      <span class="fahrenheit-degree"><a href="#" id="fahrenheit-link"> °F</a></span>
+        </span>
+          </div>
+    <div class="col-5 info-city">
+        <div id="city"> </div>
+        <div class="sunday"><span id="today-weekday"></span><span id="number-day"></span>  <span id="month"></span><div>
+        <div class="time-now"><span id="today-hours">22</span> : <span id="today-minutes">00</span></div>
+        <div class="description">Partly Cloudy</div>
+            </div>  
+              </div>
+            </div>
+          
+    <div class="details-row">
+          <span class="humidity">Humidity <span id="humidity">77</span><strong> %</strong> </span><span class="wind">Wind <span id="wind">8</span><strong>  km/h</strong></span>
+              </div>
+          
+
+        <div class=" weather-forecast"id="weather-forecast">
+            </div>
       
-          </div>
-          </div>
-          <p><a href="https://github.com/annvzska/elegant-weather-app">Open-source code </a> by annvzska</p>
+                
+                
+
+    </div>
+  </div>
+</div>
+   <p><a href="https://github.com/annvzska/elegant-weather-app" class="code-by">Open-source code </a> by annvzska</p>
     <script src="src/index.js"></script>
   </body>
 </html>
