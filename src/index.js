@@ -58,6 +58,7 @@ function formatDay(timestamps) {
     "Saturday",
     "Sunday"
   ];
+  let actualDays = days.shift();
   return days[day];
 }
 
